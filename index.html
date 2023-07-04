@@ -7,103 +7,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css.css">
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background-color: black;
-                
-            }
-
-            main {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 20px;
-            }
-
-            header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-
-            .logo {
-                font-size: 24px;
-                font-weight: bold;
-                color: white
-            }
-
-            nav {
-                display: flex;
-            }
-
-            nav button {
-                margin-right: 10px;
-            }
-
-            .search {
-                margin-bottom: 20px;
-            }
-
-            .search input {
-                width: 100%;
-                padding: 10px;
-                font-size: 16px;
-            }
-
-            .categories {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-
-            .categories button {
-                flex: 1;
-                margin-right: 10px;
-            }
-
-            .sort {
-                display: flex;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-
-            .sort select {
-                margin-left: 10px;
-                padding: 5px;
-            }
-
-            .gallery {
-                display: flex;
-                flex-wrap: wrap;
-                margin-bottom: 20px;
-            }
-
-            .gallery img {
-                flex: 1 0 100%;
-                margin-bottom: 10px;
-            }
-
-            @media (min-width: 600px) {
-                .gallery img {
-                    flex: 1 0 48%;
-                    margin-right: 10px;
-                }
-            }
-
-            @media (min-width: 1024px) {
-                .gallery img {
-                    flex: 1 0 32%;
-                }
-            }
-        </style>
     </head>
     <body>
         <main>
@@ -115,16 +18,17 @@
                     <button>Quiz</button>
                     <button>Login</button>
                 </nav>
+               
             </header>
+
+            <div>
+                <img style="max-width: 1200px;" src="image-13.png" alt="">
+            </div>
+
+            <br>
 
             <div class="search">
                 <input type="search" placeholder="Procurar">
-            </div>
-
-            <div class="categories">
-                <button>Tudo</button>
-                <button>Blog</button>
-                <button>Quiz</button>
             </div>
 
             <div class="sort">
@@ -137,10 +41,17 @@
             </div>
 
             <div class="gallery">
-                <img src="https://i.ibb.co/BqS75fH/Captura-de-tela-2023-06-04-143618.png" alt="">
-                <img src="https://i.ibb.co/T4F5RTW/Captura-de-tela-2023-06-04-144102.png" alt="">
-                <img src="https://i.ibb.co/6tFTqjs/Captura-de-tela-2023-06-04-144859.png" alt="">
+                <img class="borderIMG1" border="1" src="https://i.ibb.co/T4F5RTW/Captura-de-tela-2023-06-04-144102.png" alt="">
+                <img class="borderIMG1" border="1" src="https://i.ibb.co/6tFTqjs/Captura-de-tela-2023-06-04-144859.png" alt="">
             </div>
+
+            <div class="pagination">
+                <button>Anterior</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>Próximo</button>
+              </div>
         </main>
     </body>
 </html>
